@@ -1,0 +1,28 @@
+1. Source code formatting
+  a. UTF-8 encoding
+  b. Tab = 4 spaces
+  C. 80 chars in 1 line
+  d. No extra space between () [] and {}, e.g. ('a', 'b') [1, 2, 3]
+  d. Import
+     a) from * import *
+     b) import by order: STANDARD lib -> 3rd lib -> local
+  e. Class name with capitalized words, e.g. DemoClass
+  g. Function name with lowercases, e.g. separate_by_underscore
+  h. Prefix "_private" for private parameter or function
+
+2. Unittest is required for common lib
+  a. -- <ROOT>
+        -- lib
+           -- filemanager.py
+           -- jenkins.py
+           -- tests
+              -- test_filemanager.py
+              -- test_jenkins.py
+  b. assert*() is required in each test
+     Get familiar with assertEqual, assertTrue, assertFalse, assertIsNon, assertItemsEqual, assertDictEqual, asertListEqual, assertRegexpMatches, etc
+  c. Test data need to be cleared after each test
+
+3. Git & Gerrit
+  a. Do not check in the files which only contain changes like "added/removed spaces", "added/removed blank lines". Git GUI will helps for these cases.
+  b. Use a separated check in for the source code formatting. Do not mix code format change and business logic change in one check in.
+  c .A very nice guide to reduce troubles with Git and Gerrit: http://wiki.maginatics.com/dev/mark7_gerrit_workflow

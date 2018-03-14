@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://wiki.lss.emc.com/dev/mark7_gerrit_workflow -->
+<html lang="en" dir="ltr" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>mark7's Git+Gerrit Maginatics Workflow [wiki@maginatics]</title>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki">
+<meta name="robots" content="index,follow">
+<meta name="date" content="2016-02-11T17:37:59-0800">
+<meta name="keywords" content="dev,mark7_gerrit_workflow">
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.lss.emc.com/lib/exe/opensearch.php" title="wiki@maginatics">
+<link rel="start" href="http://wiki.lss.emc.com/">
+<link rel="contents" href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow?do=index" title="Sitemap">
+<link rel="alternate" type="application/rss+xml" title="Recent changes" href="http://wiki.lss.emc.com/feed.php">
+<link rel="alternate" type="application/rss+xml" title="Current namespace" href="http://wiki.lss.emc.com/feed.php?mode=list&ns=dev">
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://wiki.lss.emc.com/_export/xhtml/dev/mark7_gerrit_workflow">
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://wiki.lss.emc.com/_export/raw/dev/mark7_gerrit_workflow">
+<link rel="canonical" href="./mark7's Git+Gerrit Workflow_files/mark7's Git+Gerrit Workflow.html">
+<link rel="stylesheet" type="text/css" href="./mark7's Git+Gerrit Workflow_files/css.php">
+<link rel="stylesheet" type="text/css" href="./mark7's Git+Gerrit Workflow_files/shCore.css">
+<link rel="stylesheet" type="text/css" href="./mark7's Git+Gerrit Workflow_files/shThemeDefault.css">
+<script type="text/javascript">/*<![CDATA[*/var NS='dev';var JSINFO = {"id":"dev:mark7_gerrit_workflow","namespace":"dev","isadmin":0,"isauth":0};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="./mark7's Git+Gerrit Workflow_files/js.php"></script>
+<script type="text/javascript" src="./mark7's Git+Gerrit Workflow_files/shCore.js"></script>
+<script type="text/javascript" src="./mark7's Git+Gerrit Workflow_files/shAutoloader.js"></script>
+<script type="text/javascript" src="./mark7's Git+Gerrit Workflow_files/shBrushXml.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="http://wiki.lss.emc.com/lib/tpl/dokuwiki/images/favicon.ico">
+<link rel="apple-touch-icon" href="http://wiki.lss.emc.com/lib/tpl/dokuwiki/images/apple-touch-icon.png">
+    </head>
+
+<body>
+    <!--[if lte IE 7 ]><div id="IE7"><![endif]--><!--[if IE 8 ]><div id="IE8"><![endif]-->
+    <div id="dokuwiki__site"><div id="dokuwiki__top" class="site dokuwiki mode_show tpl_dokuwiki    showSidebar hasSidebar">
+
+        
+<!-- ********** HEADER ********** -->
+<div id="dokuwiki__header"><div class="pad group">
+
+    
+    <div class="headings group">
+        <ul class="a11y skip">
+            <li><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow#dokuwiki__content">skip to content</a></li>
+        </ul>
+
+        <h1><a href="http://wiki.lss.emc.com/start" accesskey="h" title="[H]"><img src="./mark7's Git+Gerrit Workflow_files/logo.png" width="64" height="64" alt=""> <span>wiki@maginatics</span></a></h1>
+            </div>
+
+    <div class="tools group">
+        <!-- USER TOOLS -->
+                    <div id="dokuwiki__usertools">
+                <h3 class="a11y">User Tools</h3>
+                <ul>
+                    <li><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow?do=login&sectok=14516a1548308dd1bbe6bca5962ac2ce" class="action login" rel="nofollow" title="Login">Login</a></li>                </ul>
+            </div>
+        
+        <!-- SITE TOOLS -->
+        <div id="dokuwiki__sitetools">
+            <h3 class="a11y">Site Tools</h3>
+            <form action="http://wiki.lss.emc.com/start" accept-charset="utf-8" class="search" id="dw__search" method="get" role="search"><div class="no"><input type="hidden" name="do" value="search"><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[F]"><input type="submit" value="Search" class="button" title="Search"><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>            <div class="mobileTools">
+                <form action="http://wiki.lss.emc.com/doku.php" method="get" accept-charset="utf-8"><div class="no"><input type="hidden" name="id" value="dev:mark7_gerrit_workflow"><select name="do" class="edit quickselect" title="Tools"><option value="">Tools</option><optgroup label="Page Tools"><option value="edit">Show pagesource</option><option value="revisions">Old revisions</option><option value="backlink">Backlinks</option></optgroup><optgroup label="Site Tools"><option value="recent">Recent changes</option><option value="media">Media Manager</option><option value="index">Sitemap</option></optgroup><optgroup label="User Tools"><option value="login">Login</option></optgroup></select><input type="submit" value="&gt;"></div></form>            </div>
+            <ul>
+                <li><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow?do=recent" class="action recent" accesskey="r" rel="nofollow" title="Recent changes [R]">Recent changes</a></li><li><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow?do=media&ns=dev" class="action media" rel="nofollow" title="Media Manager">Media Manager</a></li><li><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow?do=index" class="action index" accesskey="x" rel="nofollow" title="Sitemap [X]">Sitemap</a></li>            </ul>
+        </div>
+
+    </div>
+
+    <!-- BREADCRUMBS -->
+            <div class="breadcrumbs">
+                            <div class="youarehere"><span class="bchead">You are here: </span><span class="home"><bdi><a href="http://wiki.lss.emc.com/start" class="wikilink1" title="start">Maginatics Wiki</a></bdi></span> » <bdi><a href="http://wiki.lss.emc.com/dev/start" class="wikilink1" title="dev:start">Dev Info</a></bdi> » <bdi><span class="curid"><a href="./mark7's Git+Gerrit Workflow_files/mark7's Git+Gerrit Workflow.html" class="wikilink1" title="dev:mark7_gerrit_workflow">mark7's Git+Gerrit Maginatics Workflow</a></span></bdi></div>
+                                        <div class="trace"><span class="bchead">Trace:</span> <span class="bcsep">•</span> <span class="curid"><bdi><a href="./mark7's Git+Gerrit Workflow_files/mark7's Git+Gerrit Workflow.html" class="breadcrumbs" title="dev:mark7_gerrit_workflow">mark7's Git+Gerrit Maginatics Workflow</a></bdi></span></div>
+                    </div>
+    
+    
+    <hr class="a11y">
+</div></div><!-- /header -->
+
+        <div class="wrapper group">
+
+                            <!-- ********** ASIDE ********** -->
+                <div id="dokuwiki__aside"><div class="pad include group">
+                    <h3 class="toggle">Sidebar</h3>
+                    <div class="content">
+                                                                        
+
+
+<h1 class="sectionedit1" id="recent_changes">Recent Changes</h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "Recent Changes" [14-] -->
+<!-- no cachefile used, caching forbidden -->
+                                            </div>
+                </div></div><!-- /aside -->
+            
+            <!-- ********** CONTENT ********** -->
+            <div id="dokuwiki__content"><div class="pad group">
+
+                <div class="pageId"><span>dev:mark7_gerrit_workflow</span></div>
+
+                <div class="page group">
+                                                            <!-- wikipage start -->
+                    <!-- TOC START -->
+<div id="dw__toc">
+<h3 class="toggle">Table of Contents</h3>
+<div>
+
+<ul class="toc">
+<li class="level1"><div class="li"><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow#mark7_s_git_gerrit_maginatics_workflow">mark7's Git+Gerrit Maginatics Workflow</a></div>
+<ul class="toc">
+<li class="clear">
+<ul class="toc">
+<li class="level3"><div class="li"><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow#basics">Basics</a></div></li>
+<li class="level3"><div class="li"><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow#large_patches">Large patches</a></div></li>
+<li class="level3"><div class="li"><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow#dependent_patches">Dependent patches</a></div></li>
+<li class="level3"><div class="li"><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow#extras">Extras</a></div></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1" id="mark7_s_git_gerrit_maginatics_workflow">mark7's Git+Gerrit Maginatics Workflow</h1>
+<div class="level1">
+
+</div>
+
+<h3 class="sectionedit2" id="basics">Basics</h3>
+<div class="level3">
+
+</div>
+
+<h4 id="creating_a_new_patch">Creating a new patch</h4>
+<div class="level4">
+
+<p>
+Here's a basic summary of how I use git.  I think that it's pretty straightforward, and I believe that most people here use git in roughly this fashion.  I strongly advise against committing patches into your local master, as it creates all sorts of problems for you.  This workflow will avoid committing patches into local master.
+</p>
+
+<p>
+You start out with a git repo containing one local branch, master.  This
+tracks origin/master (I use an asterisk to show that this is the active branch)
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [*master]</pre>
+
+<p>
+When you want to make changes, you run:
+</p>
+<pre class="code">  git checkout -b wb-foo</pre>
+
+<p>
+This creates a new branch that is identical to master and points at the
+same commit at the moment:
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [master]
+                   [*wb-foo]</pre>
+
+<p>
+You make your changes on this branch.  Most of the time, I only need one
+commit, though some people make many commits and squash them down into
+one.  Giving the “one-commit” process, you have wb-foo checked out.
+You'll make changes, stage them for a commit:
+</p>
+<pre class="code">  git add -u</pre>
+
+<p>
+And then commit them:
+</p>
+<pre class="code">  git commit</pre>
+
+<p>
+These become #5 here:
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [master]
+                   \ 5 [*wb-foo]</pre>
+
+<p>
+I never commit anything directly into local master.  Local master just mirrors what lives up on the server in origin/master.
+</p>
+
+<p>
+When I want to make more changes, while on the wb-foo branch, I use 
+</p>
+<pre class="code">  git add -u</pre>
+
+<p>
+to stage the changes and
+</p>
+<pre class="code">  git commit --amend</pre>
+
+<p>
+to modify the existing commit:
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [master]
+                   \ 6 [*wb-foo]</pre>
+
+<p>
+When I'm ready to push the patch out to Gerrit, I run:
+</p>
+<pre class="code">  git push origin HEAD:refs/for/master</pre>
+
+</div>
+
+<h4 id="updating_master">Updating master</h4>
+<div class="level4">
+
+<p>
+Sometimes, I need to pull in a newer version of master.  If I do that
+I'll first checkout master to switch from wb-foo to master:
+</p>
+<pre class="code">  git checkout master</pre>
+
+<p>
+Then I will “git pull”.  This will pull down new changes from origin,
+then tack them onto the end of my local master branch.  This operation
+cannot fail, because I've not committed anything into my local master
+branch.  I'm just mirroring what I know is on the origin server:
+</p>
+<pre class="code">  git pull</pre>
+
+<p>
+Now I have this:
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 6 -&gt; 7 [*master]
+                 \ 5 [wb-foo]</pre>
+
+<p>
+Then I will rebase wb-foo.  This tries to take wb-foo from being
+attached to #4 and attaching it to #7, the current HEAD on master.  This
+will involve merging the changes from #6 to #7 on master into wb-foo:
+</p>
+<pre class="code">  git checkout wb-foo</pre>
+
+<p>
+Giving
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 6 -&gt; 7 [master]
+                 \ 5 [*wb-foo]</pre>
+
+<p>
+Then
+</p>
+<pre class="code">  git rebase master</pre>
+
+<p>
+If there are conflicts (which could happen if my change, #5, conflicts
+with some other change #6 or #7, I may wind up with a conflict.  If I do
+</p>
+<pre class="code">  git show</pre>
+
+<p>
+I can see the list of files that conflict, since git will not have added
+these.  I can either give up on the rebase (if the conflict is too
+complicated for me to resolve at the moment):
+</p>
+<pre class="code">  git rebase --abort</pre>
+
+<p>
+Or fix the conflicting changes, and then stage them for merging:
+</p>
+<pre class="code">  git add &lt;conflicting file&gt;</pre>
+
+<p>
+And the continue with the rebase:
+</p>
+<pre class="code">  git rebase --continue</pre>
+
+<p>
+At the end, I will be on wb-foo, and it will be rebased onto HEAD on
+master:
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 6 -&gt; 7 [master]
+                           \ 8 [*wb-foo]</pre>
+
+<p>
+I can now push it up to Gerrit:
+</p>
+<pre class="code">  git push origin HEAD:refs/for/master</pre>
+
+<p>
+If I want to work on multiple patches simultaneously, I just create more
+working branches attached to master.
+</p>
+
+<p>
+That covers the majority of the work I do.  There are a few other
+variants that can be useful:
+</p>
+
+</div>
+
+<h3 class="sectionedit3" id="large_patches">Large patches</h3>
+<div class="level3">
+
+<p>
+For a large patch, I may add multiple commits onto wb-foo with
+</p>
+<pre class="code">  git add -u</pre>
+
+<p>
+and
+</p>
+<pre class="code">  git commit</pre>
+
+<p>
+for each commit.
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [master]
+                  \ 5 -&gt; 6 -&gt; 7 [*wb-foo]</pre>
+
+<p>
+When I'm done, I squish things down to one patch and push it up, marking
+the commits to be “squashed” into the previous commit as “squash” (here,
+#6 and #7):
+</p>
+<pre class="code">  git rebase -i master</pre>
+
+<p>
+resulting in:
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [master]
+                  \ 8 [*wb-foo]</pre>
+
+</div>
+
+<h3 class="sectionedit4" id="dependent_patches">Dependent patches</h3>
+<div class="level3">
+
+<p>
+I may also have a series of dependent patches, which I've not had to do much:
+</p>
+<pre class="code">  1-&gt; 2 -&gt; 3 -&gt; 4 -&gt; 7 -&gt; 8 [master]
+                 \ 5 [wb-foo]
+                    \ 6 [*wb-bar]</pre>
+
+<p>
+Here, if I pull in new versions to master: I need to rebase both wb-foo
+onto wb-master:
+</p>
+<pre class="code">  git checkout wb-foo</pre>
+<pre class="code">  1-&gt; 2 -&gt; 3 -&gt; 4 -&gt; 7 -&gt; 8 [master]
+                 \ 5 [*wb-foo]
+                    \ 6 [wb-bar]</pre>
+<pre class="code">  git rebase wb-foo master</pre>
+<pre class="code">  1-&gt; 2 -&gt; 3 -&gt; 4 -&gt; 7 -&gt; 8 [master]
+                 \ 5       \9 [*wb-foo]
+                    \ 6 [wb-bar]</pre>
+
+<p>
+And rebase wb-bar onto the new version of wb-foo:
+</p>
+<pre class="code">  git checkout wb-bar</pre>
+
+<p>
+Giving
+</p>
+<pre class="code">  1-&gt; 2 -&gt; 3 -&gt; 4 -&gt; 7 -&gt; 8 [master]
+                 \ 5       \9 [wb-foo]
+                    \ 6 [*wb-bar]</pre>
+
+<p>
+Then
+</p>
+<pre class="code">  git rebase wb-foo</pre>
+
+<p>
+Giving
+</p>
+<pre class="code">  1-&gt; 2 -&gt; 3 -&gt; 4 -&gt; 7 -&gt; 8 [master]
+                           \9 [wb-foo]
+                            \ 10 [*wb-bar]</pre>
+
+<p>
+I think that that covers the important stuff.
+</p>
+
+</div>
+
+<h3 class="sectionedit5" id="extras">Extras</h3>
+<div class="level3">
+
+</div>
+
+<h4 id="extracting_patches_from_a_branch_and_applying_them_elsewhere">Extracting patches from a branch and applying them elsewhere</h4>
+<div class="level4">
+
+<p>
+The most-useful non-crucial stuff I use much is probably:
+</p>
+<pre class="code">  git cherry-pick</pre>
+
+<p>
+This basically makes a diff out of a commit, patches it onto another
+branch, and creates a new commit.  For example, if I  have:
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [master]
+       |          \ 5 [wb-foo]
+        \ 6 [wb-bar]</pre>
+
+<p>
+I could grab the wb-bar commit, convert it into a diff, and insert it
+onto the wb-foo branch:
+</p>
+<pre class="code"> git checkout wb-foo</pre>
+<pre class="code"> git cherry-pick wb-bar</pre>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [master]
+       |          \ 5 -&gt; 7 [wb-foo]
+        \ 6 [wb-bar]</pre>
+
+<p>
+Where the new commit #7 contains the same changes that were in commit
+#6.
+</p>
+
+</div>
+
+<h4 id="tracking_what_you_ve_done">Tracking what you've done</h4>
+<div class="level4">
+
+<p>
+Git reflog shows a log of the last git operations performed.  E.g.:
+</p>
+<pre class="code">  fe2caa0 HEAD@{0}: commit (amend): Avoid crashing on rapid chandle
+  destruction
+  aaf0b58 HEAD@{1}: commit: Avoid crashing on rapid chandle destruction
+  e5fff4d HEAD@{2}: checkout: moving from master to wb-9937</pre>
+
+<p>
+I can reach any of these states by simply checking out the hashref at
+the beginning of the line.  Even if there's no branch or tag or anything that
+references one of these states, it will linger for two weeks until git
+garbage-collects it.
+</p>
+
+<p>
+No matter how tangled up you get, you can see what happened by looking at git reflog.
+</p>
+
+</div>
+
+<h4 id="removing_commits_from_local_branches">Removing commits from local branches</h4>
+<div class="level4">
+
+<p>
+Git reset is important mostly for fixing errors.  A branch is just a
+“label” that points at a commit.  It's like a tag.  For local branches,
+it's possible to move the label to point at something else.
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [master]
+                 \ 5 [*wb-foo]
+  </pre>
+
+<p>
+And you make changes, git add -u, and git  commit –amend wb-foo to
+“replace” commit #5 with commit #6:
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [master]
+                 \ 6 [*wb-foo]</pre>
+
+<p>
+Then you realize that you didn't want to have overwritten #5.  Just git
+reflog, get the hashref associated with commit #5, and then git –reset
+wb-foo to point at commit #5 again:
+</p>
+<pre class="code">  git reset --hard aaf0b58</pre>
+
+<p>
+And voila:
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [master]
+                 \ 5 [*wb-foo]</pre>
+
+<p>
+This is also handy for “dropping” the last commit on a local branch by
+making a branch point at HEAD~ (one *before* HEAD):
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [master]
+                 \ 5 -&gt; 6 [*wb-foo]</pre>
+
+<p>
+Then:
+</p>
+<pre class="code">  git reset --hard HEAD~</pre>
+
+<p>
+Giving:
+</p>
+<pre class="code">  1 -&gt; 2 -&gt; 3 -&gt; 4 [master]
+                 \ 5 [*wb-foo] </pre>
+
+</div>
+
+<!-- cachefile /home/dokuwiki/src/dokuwiki/data/cache/b/b75a468bee0b2f661d73ba3ecb708c20.xhtml used -->
+
+<script type="text/javascript">
+  SyntaxHighlighter.autoloader(
+    'applescript /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushAppleScript.js',
+    'actionscript3 as3 /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushAS3.js',
+    'bash shell /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushBash.js',
+    'coldfusion cf /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushColdFusion.js',
+    'cpp c /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushCpp.js',
+    'c# c-sharp csharp /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushCSharp.js',
+    'css /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushCss.js',
+    'delphi pascal /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushDelphi.js',
+    'diff patch pas /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushDiff.js',
+    'erl erlang /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushErlang.js',
+    'groovy /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushGroovy.js',
+    'java /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushJava.js',
+    'jfx javafx /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushJavaFX.js',
+    'js jscript javascript /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushJScript.js',
+    'perl pl /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushPerl.js',
+    'php /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushPhp.js',
+    'text plain /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushPlain.js',
+    'ps powershell /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushPowerShell.js',
+    'py python /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushPython.js',
+    'ruby rails ror rb /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushRuby.js',
+    'sass scss /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushSass.js',
+    'scala /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushScala.js',
+    'sql /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushSql.js',
+    'vb vbnet /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushVb.js',
+    'xml xhtml xslt html /lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushXml.js'
+  );
+  SyntaxHighlighter.all();
+</script>
+
+                    <!-- wikipage stop -->
+                                    </div>
+
+                <div class="docInfo"><bdi>dev/mark7_gerrit_workflow.txt</bdi> · Last modified: 2016/02/11 17:37 by <bdi>mark7</bdi></div>
+
+                            </div></div><!-- /content -->
+
+            <hr class="a11y">
+
+            <!-- PAGE ACTIONS -->
+            <div id="dokuwiki__pagetools">
+                <h3 class="a11y">Page Tools</h3>
+                <div class="tools">
+                    <ul>
+                        <li><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow?do=edit&rev=0" class="action source" accesskey="v" rel="nofollow" title="Show pagesource [V]"><span>Show pagesource</span></a></li><li><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow?do=revisions" class="action revs" accesskey="o" rel="nofollow" title="Old revisions [O]"><span>Old revisions</span></a></li><li><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow?do=backlink" class="action backlink" rel="nofollow" title="Backlinks"><span>Backlinks</span></a></li><li><a href="http://wiki.lss.emc.com/dev/mark7_gerrit_workflow#dokuwiki__top" class="action top" accesskey="t" rel="nofollow" title="Back to top [T]"><span>Back to top</span></a></li>                    </ul>
+                </div>
+            </div>
+        </div><!-- /wrapper -->
+
+        
+<!-- ********** FOOTER ********** -->
+<div id="dokuwiki__footer"><div class="pad">
+    
+    <div class="buttons">
+                <a href="http://www.dokuwiki.org/donate" title="Donate"><img src="./mark7's Git+Gerrit Workflow_files/button-donate.gif" width="80" height="15" alt="Donate"></a>
+        <a href="http://www.php.net/" title="Powered by PHP"><img src="./mark7's Git+Gerrit Workflow_files/button-php.gif" width="80" height="15" alt="Powered by PHP"></a>
+        <a href="http://validator.w3.org/check/referer" title="Valid HTML5"><img src="./mark7's Git+Gerrit Workflow_files/button-html5.png" width="80" height="15" alt="Valid HTML5"></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS"><img src="./mark7's Git+Gerrit Workflow_files/button-css.png" width="80" height="15" alt="Valid CSS"></a>
+        <a href="http://dokuwiki.org/" title="Driven by DokuWiki"><img src="./mark7's Git+Gerrit Workflow_files/button-dw.png" width="80" height="15" alt="Driven by DokuWiki"></a>
+    </div>
+</div></div><!-- /footer -->
+
+    </div></div><!-- /site -->
+
+    <div class="no"><img src="./mark7's Git+Gerrit Workflow_files/indexer.php" width="2" height="1" alt=""></div>
+    <div id="screen__mode" class="no"></div>    <!--[if ( lte IE 7 | IE 8 ) ]></div><![endif]-->
+
+
+</body></html>

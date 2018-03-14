@@ -1,0 +1,37 @@
+CREDENTIAL:
+  QA12:
+    AHOST: auth01.qa12h.mozyops.com
+    BHOST: busclient02.qa12h.mozyops.com
+    PASSWORD: 123test
+    THOST: tds03.q12a.mozyops.com
+    URL: https://busclient02.qa12h.mozyops.com/login/admin?old_school=1
+    USERNAME: busroot@berkeleydata.com
+  STD1:
+    AHOST: 173.243.54.82
+    BHOST: 173.243.54.85
+    PASSWORD: Wingzer0
+    THOST: 173.243.54.142
+    URL: https://bus.test.mozypro.com/login/admin?old_school=1
+    USERNAME: ken.xu@emc.com
+DOWNLOAD_PATH: c:/fryr_download
+ENVIRONMENT:
+  BUILDTYPE: winrestore-release
+  LANGUAGE: ENGLISH_US
+  TEST_ENV: QA12
+  TIMEOUT: 300
+INSTALLER_PATH: c:/fryr_installer
+LOG_PATH: c:/fryr_log
+RESTORE:
+  MZD_TAG: mzd001
+  QA12:
+    PASSWORD: 666666
+    PERSONAL_KEY: 1234
+    USER_EMAIL: ken.xu@emc.com
+  STD1:
+    PASSWORD: 88888888
+    PERSONAL_KEY: 1234
+    USER_EMAIL: kenx2015@emc.com
+TESTDATA_PATH: c:\\fryr_download
+TESTLINK_PRJ: mozyMobile-
+TMP_PATH: c:/tmp
+WIN_RESTORE: c:/auto_restores

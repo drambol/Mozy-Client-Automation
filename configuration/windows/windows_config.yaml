@@ -1,0 +1,53 @@
+
+CREDENTIAL:
+  QA12_MozyEnterprise:
+    USERNAME: clientqa_ent_pkey@mozy.com
+    PASSWORD: Test_1234
+    CUSTOMKEYTEXT: test1234
+  QA12_mozypro:
+    USERNAME: nathan+pro+qa12@mozy.com
+    PASSWORD: Test_1234
+  QA12_mozypro_pk:
+    USERNAME: nathan+pro+qa12@mozy.com
+    PASSWORD: Test_1234
+    PERSONALKEY: test1234
+  WRONG_PASSWORD:
+    USERNAME: clientqa_ent_pkey@mozy.com
+    PASSWORD: test@1234_
+
+
+  STD1_MozyEnterprise:
+    USERNAME: nathan+ent+stg2@emc.com
+    PASSWORD: Test_1234
+    CUSTOMKEYTEXT: test1234
+  STD1_mozypro:
+    USERNAME: nathan+wan+pro+stg@emc.com
+    PASSWORD: Test_1234
+
+  PROD_mozypro:
+    USERNAME: nathan_prd_pro_pkey@mozy.com
+    PASSWORD: Test_1234
+
+
+
+
+
+
+INSTALLER_PATH: C:\windows_installer
+LOG_PATH: C:\windows_log
+TESTDATA_PATH: C:\test_data
+OUTPUT_PATH: C:\output
+DOWNLOAD_PATH: C:\download
+RESTORE_PATH: C:\RESTORE
+
+
+TESTLINK_PRJ: KAL-
+
+QA_ENVIRONMENT:
+  QA12:
+    fedid:
+      host:
+        10.29.103.120: win-ko2af9k2doa.mtdev.mozypro.local
+        10.29.136.40: mozypro.com qa12nonoempull.mozypro.com
+        10.237.13.124: auth2.mozy.com
+      ahost: "auth2.mozy.com"

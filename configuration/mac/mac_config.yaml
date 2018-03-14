@@ -1,0 +1,52 @@
+TESTLINK_PRJ: mac-
+
+CREDENTIAL:
+  QA12_MozyEnterprise:
+    USERNAME: nativeclient+linux+ent+default@mozy.com
+    PASSWORD: Test1234
+    CUSTOMKEYTEXT:
+  QA12_mozypro:
+    USERNAME: nativeclient_mac_mozypro_auto@emc.com
+    PASSWORD: Test;123
+  QA12_mozypro_pk:
+    USERNAME: nativeclient_mac_mozypro_pk_auto@emc.com
+    PASSWORD: Test;123
+    PERSONALKEY: test1234
+  STD2_mozypro_pk:
+    USERNAME: mac_st2_pro_pk@mozy.com
+    PASSWORD: test1234
+    PERSONALKEY: asdfa*jdh$l
+  WRONG_PASSWORD:
+    USERNAME: nativeclient+linux+ent+default@mozy.com
+    PASSWORD: adsfb
+  PROD_mozypro:
+    USERNAME: mac_auto_mozypro_prod@emc.com
+    PASSWORD: test1234
+  PROD_mozypro_pk:
+    USERNAME: nativeclient_mac_mozypro_auto_pk@emc.com
+    PASSWORD: test1234
+    PERSONALKEY: test1234
+
+AUTO_ACTIVATION:
+  QA12_mozypro:
+    DOMAIN_ID: D2FA7B13-A4DC-4F84-8E73-6A4BAB8AC34D
+    OU: automation
+    USERNAME_PREFIX: auto_activate_
+
+
+TESTDATA_PROPERTY:
+  FILE_PREFIX: mac_td_
+  FILE_SIZE: 10000
+  FILE_EXT: txt
+
+
+LOCAL_ADMIN_PASSWORD: test
+
+INSTALLER_PATH: ~/mac_aut_exec/mac_installer
+LOG_PATH: ~/mac_aut_exec/mac_log
+TESTDATA_PATH: ~/mac_aut_exec/testdata
+OUTPUT_PATH: ~/mac_aut_exec/mac_restore
+TMP_PATH: /tmp
+
+ELEMENT_WAIT_TIME: 60
+ELEMENT_WAIT_GRANULARITY: 2

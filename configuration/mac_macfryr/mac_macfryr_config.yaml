@@ -1,0 +1,19 @@
+TESTLINK_PRJ: mac-mac_macfryr-
+
+QA12_mozypro:
+  USERNAME: nativeclient_mac_mozypro_auto@emc.com
+  PASSWORD: Test;123
+
+PROD_mozypro:
+    USERNAME: mac_auto_mozypro_prod@emc.com
+    PASSWORD: test1234
+
+LOCAL_ADMIN_PASSWORD: test
+
+INSTALLER_PATH: ~/mac_e2e_installer
+LOG_PATH: ~/mac_e2e_log
+TESTDATA_PATH: ~/mac_macfryr/testdata
+OUTPUT_PATH: ~/mac_macfryr/restore_output
+DOWNLOAD_PATH: ~/mac_macfryr/web_restore_download
+TMP_PATH: /tmp
+

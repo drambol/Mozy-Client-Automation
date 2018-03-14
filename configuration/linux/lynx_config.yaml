@@ -1,0 +1,65 @@
+TESTLINK_PRJ: lin-
+
+CREDENTIAL:
+  QA12_MozyEnterprise:
+    USERNAME: nativeclient+linux+ent+default@mozy.com
+    PASSWORD: Test1234
+    CUSTOMKEYTEXT:
+  QA12_mozypro:
+    USERNAME: linux_auto_qa12_mozypro@mozy.com
+    PASSWORD: QAP@SSw0rd
+  QA12_mozypro_ckey:
+    USERNAME: linux_qa12_ckey_mozypro@mozy.com
+    PASSWORD: QAP@SSw0rd
+  QA12_mozypro_pk:
+    USERNAME: linux_auto_qa12_mozypro_pk@mozy.com
+    PASSWORD: QAP@SSw0rd
+    PERSONALKEY: test1234
+  WRONG_PASSWORD:
+    USERNAME: nativeclient+linux+ent+default@mozy.com
+    PASSWORD: adsfb
+
+
+
+  STD2_MozyEnterprise_pk:
+    USERNAME: linux+client+automation@mozy.com
+    PASSWORD: Test_1234
+    PERSONALKEY: test1234
+
+  STD2_mozypro_pk:
+    USERNAME: linux+client+automation@mozy.com
+    PASSWORD: Test_1234
+    PERSONALKEY: test1234
+
+
+
+
+  PROD_mozypro:
+    USERNAME: native_client+linux+default@test.com
+    PASSWORD: Test_1234
+  PROD_mozypro_pk:
+    USERNAME: native_client+linux+pkey@test.com
+    PASSWORD: Test_1234
+    PERSONALKEY: test1234
+  PROD_mozypro_ckey:
+    USERNAME: native_client+linux+ckey@test.com
+    PASSRORD: Test_1234
+
+
+CUSTOMIZED_CONFIG:
+  log.debugmask: "mordor:http:client"
+  mozy.codename: mozypro
+
+
+TESTDATA_PROPERTY:
+  FILE_PREFIX: lin
+  FILE_SIZE: 10000
+  FILE_EXT: txt
+
+
+INSTALLER_PATH: /linux_installer
+LOG_PATH: /linux_log
+TESTDATA_PATH: /linux/backup
+OUTPUT_PATH: /linux/download
+OUTPUT_PATH: /linux/download
+TMP_PATH: /tmp

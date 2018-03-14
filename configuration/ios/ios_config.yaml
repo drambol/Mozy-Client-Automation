@@ -1,0 +1,26 @@
+Environment:
+    VERSION: 1.7.1
+    BUILDTYPE:
+    LANGUAGE: ENGLISH_US
+    TIMEOUT: 300
+
+CREDENTIAL:
+  STD1:
+    USERNAME: cf88ex@163.com
+    PASSWORD: 990944
+
+SIMULATOR:
+  ABS_PATH: /Users/xuk7/Library/Developer/Xcode/DerivedData/Mozy-iPhone-frayxsnjzgkapcervhgwpmybialv/Build/Products/Debug-iphonesimulator/Mozy DB.app
+  APPIUM_URI: http://127.0.0.1:4724/wd/hub
+  CAPABILITY:
+    PLATFORM_NAME: iOS
+    PLATFORM_VERSION: 8.4
+    DEVICE_NAME: iPhone 6
+
+INSTALLER_PATH: /ios_installer
+LOG_PATH: /ios_log
+TESTDATA_PATH: /ios_testdata
+OUTPUT_PATH: /ios_output
+TMP_PATH: /ios_temp
+
+TESTLINK_PRJ: mozyMobile-

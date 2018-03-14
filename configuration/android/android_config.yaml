@@ -1,0 +1,28 @@
+Environment:
+    VERSION: 1.7.2
+    BUILDTYPE: "mozymobile-android-release"
+    LANGUAGE: ENGLISH_US
+    TIMEOUT: 300
+
+CREDENTIAL:
+  STD1:
+    USERNAME: cf88ex@163.com
+    PASSWORD: 990944
+
+SIMULATOR:
+  PLATFORM_NAME: Android
+  PLATFORM_VERSION: 4.4.2
+  APP: C:/android_installer/Mozy.apk
+  DEVICE_NAME: Android_4.4.2
+  APP_PACKAGE: com.mozy.mobile.android
+  APP_ACTIVITY: com.mozy.mobile.android.activities.startup.FirstRun
+  APPIUM_URI: http://127.0.0.1:4723/wd/hub
+
+INSTALLER_PATH: c:/android_installer
+LOG_PATH: c:/android_log
+TESTDATA_PATH: c:/android_backup
+OUTPUT_PATH: c:/android_download
+TMP_PATH: c:/tmp
+
+
+TESTLINK_PRJ: mozyMobile-

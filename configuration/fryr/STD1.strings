@@ -1,0 +1,37 @@
+/* Backup Client Download URI */
+"BackupDownloadURI" = "http://mozy.com/pro/download";
+
+/* Backup Product Title. This must match the product name in Demeter */
+"BackupProductTitle" = "Mozy Online Backup";
+
+/* Bus URI */
+"BusURI" = "https://bus.test.mozypro.com";
+
+/*  Code name. Used for creating a unique partner namespace. No spaces or special characters. */
+"CodeName" = "mozy";
+
+/* Backup Client Download URI for MozyHome. Only used for the Mozy-branded product. */
+"MozyHomeBackupDownloadURI" = "http://mozy.com/home/download";
+
+/* URI used when prompting the user to create a new restore. */
+"NewRestoreURI" = "http://mozy.com";
+
+/* Product Name */
+"ProductName" = "Mozy";
+
+/* Product Title */
+"ProductTitle" = "Mozy Restore Manager";
+
+/* Used for creating various directories on disk (e.g. Application Support, Logging). Should usually just be the same as the product title. */
+"ShortProductTitle" = "Mozy Restore";
+
+/* Triton URI */
+"TritonURI" = "https://std1.triton.mozy.com/";
+
+/* Personal Key Help link */
+"PersonalKeyHelpURI" = "http://docs.mozy.com/docs/%@/user-pro-mac/guide/concepts/mixed_key_decrypt_wr";
+
+
+/*Mozy Home help link*/
+"PersonalKeyHelpURI.home" = "http://docs.mozy.com/docs/%@/user-home-mac/guide/concepts/mixed_key_decrypt_wr";
+

@@ -1,0 +1,13 @@
+TestRun:
+{
+_id: <timestamp>
+env: <qa_env>
+client: <xxxx>
+build: <buildname>
+}
+
+
+TestCaseResult:
+{
+
+}

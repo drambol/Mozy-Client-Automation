@@ -1,0 +1,185 @@
+JENKINS:
+  URL: http://jenkins01.tools.mozyops.com
+  USERNAME: clinej
+  KEY: 62a6ec4fb4788d7bd2d068d378fe094b
+
+REDIS:
+  URL: 10.237.4.29
+  PORT: 6379
+
+ELASTICSEARCH:
+#  URL: http://10.237.3.220
+#  PORT: 8080
+  URL: http://10.29.103.61
+  PORT: 9200
+
+LOGSTASH:
+#  URL: 10.237.3.220
+  URL: 10.29.103.190
+  PORT: 5044
+
+TESTLINK:
+  URL: http://testlink.mozy.lab.emc.com/
+  KEY: 1234
+
+CKEY: http://cnenwannl1c.corp.emc.com/testckeys/Rich.ckey
+
+KMIP:
+  SERVERADDRESS: kms150.mozysh.lab.emc.com
+  SERVERPORT: 5696
+  NAE-PORT: 9000
+  ISSUER: NW-ROOTCA
+  GROUP: qatestkmipgroup
+
+
+QA_ENVIRONMENT:
+  QA6:
+    bifrost.host: "bifrost01.qa6.mozyops.com"
+    mozy_dell_integration:
+      service_key: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      api_key: "5FjLFoXhr3uEAdAZrEJuZprIHn8LbcXVFkn2yuFQWTE6RNAHiaUzwKMuWLvWssnf"
+      root_partner_id: 3559515
+      mozypro:
+        root_partner_id: 3559516
+        root_role_id: 22707
+        pro_plan_id: 9511
+      mozyenterprise:
+        root_partner_id: 3559517
+        root_role_id: 22708
+        pro_plan_id: 9512
+  QA8:
+    bifrost.host: "bifrost01.qa8.mozyops.com"
+#    mozy_dell_integration:
+#      service_key: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+#      api_key: "5B8HkQjX8gCj4PfYoWjVFefWzXLfXJRzdY9Y0ISeQqboDLXUnFe386zjEfA6jEGJ"
+#      root_partner_id: 650674
+#      mozypro:
+#        root_partner_id: 650676
+#        root_role_id: 27167
+#        pro_plan_id: 1362
+#      mozyenterprise:
+#        root_partner_id: 650675
+#        root_role_id: 27168
+#        pro_plan_id: 1363
+
+    mozy_dell_integration:
+      service_key: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      api_key: "mHoh9v9QvJ4rPlbHAJryLvhO6zmDymRGeasxojmMuH6DWckdRdXUrlZ4mnMclDCX"
+      root_partner_id: 506207
+      mozypro:
+        root_partner_id: 506216
+        root_role_id: 20591
+        pro_plan_id: 1356
+      mozyenterprise:
+        root_partner_id: 506243
+        root_role_id: 20592
+        pro_plan_id: 1354
+  QA12:
+    mozy.bushost:  "busclient02.qa12h.mozyops.com"
+    mozy.authhost: "auth01.qa12h.mozyops.com"
+    mozy.tritonhost: "tds02.q12a.mozyops.com"
+    mozy.cashost: "https://cas01.qa12h.mozyops.com"
+    mozy.odinhost: "https://odin01.qa12h.mozyops.com:3443"
+    ssl.verifyhostname: 0
+    ssl.verifypeercertificate: 0
+    bifrost.partner.id: 4452917
+    bifrost.partner.api_key: uDMU0mzj88zjM4hCr16v67Y6eeEaOerCZsB5QzRn5AIChemQpOmjon0sSFEJwdbb
+    bifrost.host: "bifrost01.qa12h.mozyops.com"
+    bus_admin: busroot@berkeleydata.com
+    bus_admin_password: 123test
+    autoactivate:
+      domain_id: "{D2FA7B13-A4DC-4F84-8E73-6A4BAB8AC34D}"
+      OU: "automation"
+      licensetype: "Server"
+    assistactivate:
+      domain_id: "{D2FA7B13-A4DC-4F84-8E73-6A4BAB8AC34D}"
+      OU: "automation"
+      licensetype: "Server"
+      preferredactivationtype: 3
+    mozy_dell_integration:
+      service_key: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      api_key: "RekgE8bUB6APRrQrAKxEcbyZJebsFq0HagMNW320bDsYe8QLgOegJbfOnSDy8dVJ"
+      root_partner_id: 416942
+      mozypro:
+        root_partner_id: 416944
+        root_role_id: 15195
+        pro_plan_id: 1353
+      mozyenterprise:
+        root_partner_id: 416945
+        root_role_id: 15047
+        pro_plan_id: 1354
+
+
+  STD1:
+    mozy.bushost: "bus.test.mozypro.com"
+    mozy.authhost: "auth.test.mozy.com"
+    mozy.tritonhost: "std1.triton.mozy.com"
+    mozy.odinhost: "https://api.test.mozy.com"
+    ssl.verifyhostname: 1
+    ssl.verifypeercertificate: 1
+
+    bifrost.host: "services.test.mozy.com"
+    mozy_dell_integration:
+      service_key: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      api_key: "0jacWdF51do6gUN9kV6oDqUgwDEhEJX83cF5eQxAAwaISit76ptsbCSMDTsTWEV9"
+      root_partner_id: 3576372
+      mozypro:
+        root_partner_id: 3576374
+        root_role_id: 3926
+        pro_plan_id: 928
+      mozyenterprise:
+        root_partner_id: 3576373
+        root_role_id: 3932
+        pro_plan_id: 926
+  STD2:
+    mozy.bushost: "173.243.55.16"
+    mozy.authhost: "auth.st2.mozy.com"
+    mozy.tritonhost: "triton.st2.mozy.com"
+    mozy.odinhost: "https://api.st2.mozypro.com"
+    ssl.verifyhostname: 1
+    ssl.verifypeercertificate: 1
+
+    bifrost.host: "services.st2.mozy.com"
+    mozy_dell_integration:
+      service_key: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      api_key: "mPQ4BSQ4JiOfWpyEznHMNVp8QterCQu4qyoABGxvwyHF4WiOIkLExRRAX9KzZBmH"
+      root_partner_id: 373390
+      mozypro:
+        root_partner_id: 373391
+        root_role_id: 12150
+        pro_plan_id: 901
+      mozyenterprise:
+        root_partner_id: 373392
+        root_role_id: 12151
+        pro_plan_id: 904
+  PROD:
+    mozy.bushost:  "www.mozypro.com"
+    mozy.authhost:  "auth2.mozy.com"
+    mozy.tritonhost: "triton.mozy.com"
+    mozy.odinhost: "https://api.mozypro.com"
+    ssl.verifyhostname: 1
+    ssl.verifypeercertificate: 1
+    bus_admin: nathan.wan@emc.com
+    bus_admin_password: Test_1234
+
+    bifrost.host: "services.mozy.com"
+    mozy_dell_integration:
+      service_key: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      api_key: "XOrJsfIj9BexOc4StNeaM11Gcc6VTapREAeGsGXdDuBBPfhQtoLDrL4RlAQj8E4c"
+      root_partner_id: 430708
+      mozypro:
+        root_partner_id: 433486
+        root_role_id: 14395
+        pro_plan_id: 1104
+      mozyenterprise:
+        root_partner_id: 433486
+        root_role_id: 14396
+        pro_plan_id: 1104
+
+MOZY.COM:
+  URL1: http://mozy.com/
+  URL2: https://client.mozy.com/
+
+TIMEOUT: 300
+GRANULARITY: 5
+BROWSER: 'firefox'

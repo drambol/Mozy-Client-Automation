@@ -1,0 +1,14 @@
+behave
+#pymongo
+pyyaml
+elasticsearch
+Appium-Python-Client
+redis
+sure
+uuid
+celery
+requests
+selenium
+apscheduler
+suds
+suds_requests
